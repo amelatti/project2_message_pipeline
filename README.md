@@ -1,5 +1,6 @@
-# project2_message_pipeline
+# Project_2_Message_Pipeline
  Udacity Data Science Course - Project 2 Emergency message data pipeline
+ A project with the goal of training a Machine Learning model (via a data pipeline) on emergency message data to help identify future requests in a web app format.
 ### Table of Contents
 
 1. [Installation](#installation)
@@ -14,9 +15,9 @@ Necessary libraries to run the code include: pandas, numpy, sklearn, plotly, fla
 
 ## File Descriptions <a name="files"></a>
 
-@@@ .py file process_data.py includes the code that was used to import .csvs of the Disaster Message Data, combine them, and store them in a SQL .db
-@@@ .py file train_classifier.py includes the code that was used to import data from the SQL .db, clean it and tokenize it, train and test a model with it, and then export the model.
-@@@ .py file run.py includes the code that is used to host the flask web app which holds data visualizations as well as an interactive form of the ML model
+1) .py file process_data.py includes the code that was used to import .csvs of the Disaster Message Data, combine them, and store them in a SQL .db
+2) .py file train_classifier.py includes the code that was used to import data from the SQL .db, clean it and tokenize it, train and test a model with it, and then export the  model.
+3) .py file run.py includes the code that is used to host the flask web app which holds data visualizations as well as an interactive form of the ML model
 
 
 ## How to Use <a name="use"></a>
