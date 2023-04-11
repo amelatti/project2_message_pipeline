@@ -56,7 +56,13 @@ def clean_data(df):
     
         # convert column from string to numeric
         categories[column] = categories[column].astype(int)
+
         
+    # Ensure that we make sure our dataframe classifier values are binary (1 or 0).
+    # Do this by checking categories df using .where. Any place that the .where is FALSE then the value will be set to 0.
+    # EX: If value in categories is a 2, then it is NOT <=1 and will be set to 0.    
+    categories.where(categories <= 1, 0, inplace=True)
+    
     # drop the original categories column from `df`
     df = df.drop(columns='categories')
 
